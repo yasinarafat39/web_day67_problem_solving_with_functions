@@ -1,8 +1,8 @@
-```practice task
 
 # Practice Task
 
 ## TASK - 1
+```
 /** 
  * Write a function to convert temperature from Celsius to Fahrenheit.
  *
@@ -14,11 +14,11 @@ function celToFer(celsius) {
 }
 
 // console.log(celToFer(30)); // 86
-
+```
 
 
 ## TASK - 2
-
+```
 /** 
  * You are given an array of numbers. Count how many times the a number is repeated in the array.
  *
@@ -46,13 +46,13 @@ function counterHowManyHave(array, find) {
 
 const howMuch = counterHowManyHave(numbers, 512);
 // console.log(howMuch); // 0
-
+``` 
 
 
 
 
 ## TASK - 3
-
+```
 /** 
  * Write a function to count the number of vowels in a string.
  *
@@ -81,9 +81,9 @@ function countHowMuchVowelsHave(str) {
 
 const howMuchVowels = countHowMuchVowelsHave(str);
 console.log(howMuchVowels);
-
+```
 ### Way-2
-
+```
 function countHowMuchVowelsHave2(str) {
   const vowels = "aeiouAEIOU";
   let numbersOfVowels = 0;
@@ -97,11 +97,11 @@ function countHowMuchVowelsHave2(str) {
 
 const howMuchVowels2 = countHowMuchVowelsHave2(str);
 console.log(howMuchVowels2);
-
+```
 
 
 ## TASK - 4
-
+```
 /** 
  * Write a function to find the longest word in a given string.
  *
@@ -135,11 +135,11 @@ function findLongestWord(str) {
 
 console.log(findLongestWord(task4)); // jumped
 console.log(findLongestWord(task4_1)); // Programming
-
+```
 
 
 ## TASK - 5
-
+```
 /** 
  * Generate a random number between 10 to 20. 
 */
@@ -152,3 +152,4 @@ function generateRandom(min, max){
 
 console.log(generateRandom(10, 20))
 // console.log(generateRandom(50, 55))
+```
