@@ -28,7 +28,7 @@ const numbers = [5, 6, 11, 12, 98, 5];
 
 function counterHowManyHave(array, find) {
   let counter = 0;
-  for (item of array) {
+  for (let item of array) {
     // console.log(item);
     if (item === find) {
       counter++;
@@ -51,7 +51,7 @@ const str = "Write a function to count the number of vowels in a string.";
 function countHowMuchVowelsHave(str) {
   let numbersOfVowels = 0;
   const strArray = str.split("");
-  for (item of strArray) {
+  for (let item of strArray) {
     // console.log(item);
     if (
       item.toLowerCase() === "a" ||
@@ -70,19 +70,70 @@ function countHowMuchVowelsHave(str) {
 const howMuchVowels = countHowMuchVowelsHave(str);
 console.log(howMuchVowels);
 
-
 // Way-2
 
-function countHowMuchVowelsHave2 (str){
-    const vowels = 'aeiouAEIOU'
-    let numbersOfVowels = 0;
-    for(char of str){
-        if(vowels.includes(char)){
-            numbersOfVowels++;
-        }
+function countHowMuchVowelsHave2(str) {
+  const vowels = "aeiouAEIOU";
+  let numbersOfVowels = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      numbersOfVowels++;
     }
-    return numbersOfVowels;
+  }
+  return numbersOfVowels;
 }
 
 const howMuchVowels2 = countHowMuchVowelsHave2(str);
 console.log(howMuchVowels2);
+
+/**
+ * TASK - 4
+ * Write a function to find the longest word in a given string.
+ *
+ * sample-input: I am learning Programming to become a programmer
+ * sample-output: Programming
+ *
+ */
+
+// step - 1: split(' ') the string into an array of strings
+// step - 2: initiate a variable that will hold the lenght of the longest word
+// step - 3: create the for loop
+// step - 4: return the logest word
+
+const task4 = "The quick brown fox jumped over the lazy dog";
+const task4_1 = "I am learning Programming to become a programmer";
+
+function findLongestWord(str) {
+  const splitedStr = str.split(" ");
+  // console.log(splitedStr);
+  let longestWord = "";
+  
+  for (let item of splitedStr) {
+    // console.log(item);
+    if(longestWord. length < item.length){
+      longestWord = item;
+    }
+  }
+
+  return longestWord;
+}
+
+console.log(findLongestWord(task4)); // jumped
+console.log(findLongestWord(task4_1)); // Programming
+
+
+
+
+/**
+ * TASK - 5
+ * Generate a random number between 10 to 20. 
+*/
+
+
+function generateRandom(min, max){
+  const random = Math.floor(Math.random()*(max - min + 1)) + min; 
+  return random;
+}
+
+console.log(generateRandom(10, 20))
+// console.log(generateRandom(50, 55))
