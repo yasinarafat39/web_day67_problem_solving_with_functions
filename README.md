@@ -2,7 +2,7 @@
 # Practice Task
 
 ## TASK - 1
-```
+```javascript
 /** 
  * Write a function to convert temperature from Celsius to Fahrenheit.
  *
@@ -18,7 +18,7 @@ function celToFer(celsius) {
 
 
 ## TASK - 2
-```
+```javascript
 /** 
  * You are given an array of numbers. Count how many times the a number is repeated in the array.
  *
@@ -52,7 +52,7 @@ const howMuch = counterHowManyHave(numbers, 512);
 
 
 ## TASK - 3
-```
+```javascript
 /** 
  * Write a function to count the number of vowels in a string.
  *
@@ -83,7 +83,7 @@ const howMuchVowels = countHowMuchVowelsHave(str);
 console.log(howMuchVowels);
 ```
 ### Way-2
-```
+```javascript
 function countHowMuchVowelsHave2(str) {
   const vowels = "aeiouAEIOU";
   let numbersOfVowels = 0;
@@ -101,7 +101,7 @@ console.log(howMuchVowels2);
 
 
 ## TASK - 4
-```
+```javascript
 /** 
  * Write a function to find the longest word in a given string.
  *
@@ -139,7 +139,7 @@ console.log(findLongestWord(task4_1)); // Programming
 
 
 ## TASK - 5
-```
+```javascript
 /** 
  * Generate a random number between 10 to 20. 
 */
